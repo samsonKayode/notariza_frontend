@@ -1,0 +1,901 @@
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../public/fonts/CeraProMedium.otf");
+  font-style: medium;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../public/fonts/CeraProLight.otf");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../public/fonts/CeraProBold.otf");
+  font-style: bold;
+  font-weight: 700;
+}
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: "Cera Pro";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  font-weight: 900;
+  color: hsla(236, 51%, 38%, 1);
+}
+* {
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+.container {
+  padding: 0 4rem;
+}
+.contactLists {
+  display: grid;
+  /* grid-template-columns: 150px 1.3fr 100px 1fr 2fr; */
+  grid-template-columns: 50px 100px repeat(auto-fit, minmax(100px,1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  background-color: inherit;
+  border-top: 1px solid hsla(0, 0%, 74%, 1);
+  border-bottom: 1px solid hsla(0, 0%, 74%, 1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: -1px;
+}
+.contactLists:first-of-type{
+  margin-top: 100px;
+}
+.contactListTitle {
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #828282;
+}
+.contactListObj {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 10px;
+  width: auto;
+  word-wrap: break-word;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted rgba(47, 53, 145, 0.2); /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  background-color: rgb(72, 76, 128);
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+  
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/* Header style */
+
+.header {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerLogo {
+  object-fit: contain;
+}
+.headerNav {
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+
+}
+.headerNavItem {
+  padding: 0 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: hsla(0, 0%, 0%, 1);
+
+}
+.pageNav {
+  display: flex;
+  list-style: none;
+}
+.clearBtn {
+  height: 60px;
+  width: 220px;
+  border-radius: 10px;
+  border: 2px solid hsla(236, 51%, 38%, 1);
+  font-size: 16px;
+  font-weight: 700;
+  color: hsla(236, 51%, 38%, 1);
+  background-color: #fff;
+  cursor: pointer;
+}
+.login {
+  border: none;
+  background-color: #fff;
+  padding: 0 55px;
+  font-weight: 700;
+  font-size: 18px;
+  color: hsla(0, 0%, 0%, 1);
+}
+.login:hover {
+  font-weight: 900;
+  color: hsla(236, 51%, 38%, 1);
+}
+.hamburger {
+  display: none;
+}
+/* Hero Section */
+
+.heroSection {
+  background-image: url(../public/backgroundOne.png);
+  background-size: cover;
+  display: flex;
+  height: 750px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.heroWords {
+  padding-left: 50px;
+}
+.heroTitle {
+  font-weight: 700;
+  font-size: 66px;
+  max-width: 650px;
+  z-index: 100;
+}
+.heroDesc {
+  font-weight: 300;
+  font-size: 21px;
+  color: hsla(0, 0%, 50%, 1);
+  line-height: 28px;
+}
+.heroButton {
+  width: 278px;
+  height: 60px;
+  background: hsla(236, 51%, 38%, 1);
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.pen {
+  color: #000;
+}
+/* Services */
+.serviceTitle {
+  text-align: center;
+  font-size: 35px;
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.serviceItemTitle {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 18px;
+}
+.serviceItems {
+  max-width: 350px;
+  height: 400px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid hsla(0, 0%, 95%, 1);
+  padding: 0 20px;
+  text-align: center;
+}
+.serviceItems:hover {
+  box-shadow: 10px 10px 8px 10px #E5E5E5;
+}
+.serviceItemdesc {
+  font-size: 19px;
+  font-weight: 300;
+  color: hsla(0, 0%, 50%, 1);
+  padding: 0 30px;
+  line-height: 28px;
+}
+.serviceItems a {
+  color: hsla(236, 51%, 38%, 1);
+}
+.serviceItems a:hover {
+  text-decoration: underline;
+  font-weight: 500;
+}
+/* action */
+.action {
+  height: 530px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  background-color: hsla(236, 51%, 38%, 1);
+  padding: 0 20px;
+  margin: 150px 0;
+}
+.actionWords {
+  align-self: center;
+}
+.actionTitle {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 600;
+}
+.actionBtn {
+  width: 258px;
+  height: 58px;
+  background-color: #fff;
+  color: hsla(236, 51%, 38%, 1);
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.actionImage {
+  position: absolute;
+  right: 0;
+}
+/* contact */
+
+.contact {
+  margin: 120px 0;
+  padding-top: 50px;
+  height: 400px;
+  background-image: url(../public/backgroundTwo.png);
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contactTitle {
+  font-size: 44px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactInput {
+  width: 440px;
+  height: 58px;
+  background-color: #fff;
+  border: 2px solid hsla(0, 0%, 90%, 1);
+  color: hsla(0, 1%, 67%, 1);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 15px;
+}
+.contactBtn {
+  background: hsla(236, 51%, 38%, 1);
+  height: 60px;
+  width: 201px;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  margin: 25px 0;
+  cursor: pointer;
+
+}
+/* Side Bar */
+.hamburgerSideBar {
+  display: none;
+}
+.sideBarWhole {
+  background-color: #FFFFFF;
+  margin: 0;
+}
+.sideBar{
+  width: 270px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+}
+.sidebarLogo {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sidebarItems{
+  padding-left: 30px;
+}
+.sidebarItem {
+  padding-bottom: 35px;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-column-gap: 18px;
+}
+.sidebarLink {
+  font-family: Cera Pro;
+  font-size: 16px;
+  font-weight: 600;
+  align-self: center;
+}
+/* About */
+.about {
+  margin: 0 2rem;
+}
+.aboutParagraph {
+  font-family: Cera Pro;
+  font-size: 21px;
+  font-weight: 500;
+  color: hsla(0, 0%, 50%, 1);
+
+}
+.aboutTitle {
+  text-align: center;
+}
+.aboutTitle h3 {
+font-family: Cera Pro;
+font-size: 21px;
+font-weight: 500;
+color: hsla(0, 1%, 67%, 1);
+}
+.aboutTitle h2 {
+  font-family: Cera Pro;
+  font-size: 44px;
+  font-weight: 700;
+  color: hsla(0, 0%, 0%, 1);
+}
+.aboutIdentity {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  padding-top: 20px;
+}
+.aboutIdentityWords {
+  padding-top: 90px;
+}
+.aboutIdentityWords p {
+  max-width: 493px;
+}
+.aboutSectionHeader {
+font-family: Cera Pro;
+font-size: 47px;
+font-weight: 500;
+color: hsla(0, 0%, 0%, 0.9);
+}
+.aboutIdentityImage {
+  display: flex;
+  flex-direction: column;
+}
+.aboutOffer {
+  padding-top: 4rem;
+}
+.aboutOfferHeading {
+  text-align: center;
+}
+.aboutOfferWork {
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 490px 0.8fr;
+  grid-column-gap: 130px;
+}
+.aboutOfferWorkWords {
+  padding-top: 30px;
+}
+.aboutTeam {
+  text-align: center;
+  margin-top: 6rem;
+}
+.aboutTeamMembers {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+}
+.aboutTeamMember h5 {
+  font-family: Cera Pro;
+  font-size: 21px;
+  font-weight: 500;
+  color: hsla(0, 0%, 0%, 0.9);
+}
+.aboutTeamMember h4 {
+font-family: Cera Pro;
+font-size: 29px;
+font-weight: 500;
+color: hsla(236, 51%, 38%, 1);
+}
+
+/* dash Layout */
+.dashContainer {
+  display: grid;
+  /* height: 100vh; */
+  grid-template-columns: 285px 1fr;
+}
+/* Dashboard */
+.dashboard {
+  width: calc(100vw - 290px);
+  grid-column: 2;
+  background-color: #E5E5E5;
+  padding: 45px;
+}
+.dashboardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashIdentity {
+  display: flex;
+  align-items: center;
+}
+.dashIdentityName {
+  padding-right: 8px;
+}
+.dashEnquiry {
+  height: 150px;
+  width: 570px;
+  background: #FFFFFF;
+  border: 2px solid #F2F2F2;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding-left: 70px;
+  margin-bottom: 50px;
+}
+.dashEnquiry p {
+  font-family: Cera Pro;
+  font-size: 18px;
+  font-weight: 500;
+  color: hsla(0, 0%, 50%, 1);
+  margin-bottom: 2px;
+}
+.dashEnquiry h3 {
+  font-family: Cera Pro;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 5px;
+ }
+.dashItem {
+  height: 150px;
+  width: 320px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: 2px solid #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.dashItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.dashItem h3 {
+  font-family: Cera Pro;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.dashItem h2 {
+  font-family: Cera Pro;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  color: hsla(0, 0%, 50%, 1);
+
+}
+#dashTable td, #dashTable th {
+  border-bottom: 3px solid #E5E5E5;
+  padding:35px 40px;
+  margin: 0;
+}
+.dashTableSection {
+  
+  width: 1030px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  padding: 40px 65px;
+}
+/* Admin Table */
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  
+}
+th {
+  padding: 20px 0;
+  background-color: rgba(47, 53, 145, 0.2);
+  padding-left: 15px;
+  
+}
+td {
+  padding: 14px 0;
+  font-size: 14px;
+  padding-left: 15px;
+}
+.tableHeader {
+  background: rgba(47, 53, 145, 0.2);
+  padding-left: 10px;
+}
+
+/* Footer style */
+.footer {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+.footerIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.footerLogo {
+  object-fit: contain;
+}
+.social {
+  margin-top: 20px;
+  display: flex;
+}
+.footerTitle {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.footerItem {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsla(0, 0%, 50%, 1);
+  padding: 10px 0;
+}
+.socialIcon {
+  margin-right: 15px;
+}
+/* Account Created */
+.accountCreated {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  text-align: center;
+}
+.accountCreatedTitle {
+  font-family: Cera Pro;
+  font-size: 29px;
+  font-weight: 500;
+  color: hsla(0, 0%, 50%, 1);
+}
+.accountCreatedDesc {
+  font-family: Cera Pro;
+  font-size: 16px;
+  font-weight: 500;
+  color: hsla(0, 0%, 50%, 1);
+}
+.accountCreatedBtn {
+  height: 55px;
+  width: 278px;
+  border-radius: 10px;
+  background: hsla(236, 51%, 38%, 1);
+  color: #FFFFFF;
+  border: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  .dashItems {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .container{
+    padding: 0 2rem;
+  }
+  .headerNav {
+    width: 75vw;
+  }
+  .clearBtn {
+    height: 50px;
+    width: 200px;
+  }
+  .login {
+    padding: 0 30px;
+  }
+  Image .hamburger {
+    display: none;
+  }
+  .serviceItems {
+    max-width: 300px;
+    height: 370px;
+  }
+  .actionImage {
+    width: 680px;
+    height: 650px;
+  }
+  .aboutOfferWork {
+    grid-template-columns: 490px 0.9fr;
+    grid-column-gap: 70px;
+  }
+  .missingItem .moreInfo {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .dashItems {
+    grid-template-columns: 1fr 1fr;
+  }
+  .dashItem {
+    height: 130px;
+    width: 280px;
+  }
+  .aboutOfferWork {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+  }
+  .aboutOfferWorkWords {
+    padding-top: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    padding: 0;
+  }
+  /* header */
+  .hamburger {
+    padding-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+  }
+  .headerLogo {
+    padding-left: 10px;
+  }
+  .headerNav {
+    display: none;
+  }
+  .headerNav.show {
+    display: block;
+    background-color: hsla(236, 51%, 38%, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    padding-top: 30px;
+    margin: 0;
+    top: 100px;
+    width: 100vw;
+    height: calc(60vh - 70px);
+    z-index: 100;
+  }
+  .headerNav.show .headerNavItem {
+    color: #fff;
+    font-size: 18px; 
+  }
+  .headerNav.show li {
+    padding-bottom: 20px;
+  }
+  .headerNav.show .pageNav {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerNav.show .clearBtn {
+    height: 60px;
+    width: 220px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color:  hsla(236, 51%, 38%, 1);
+  }
+  .headerNav.show .login {
+    background-color:  hsla(236, 51%, 38%, 1);
+    color: #fff;
+    padding-bottom: 40px;
+  }
+  .headerNav.show .headerBtn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  /* hero */
+  .heroTitle {
+    font-weight: 700;
+    font-size: 60px;
+    max-width: 650px;
+  }
+  .heroSection {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .heroImage {
+    display: none;
+  }
+  .heroWords {
+    padding-left: 0;
+  }
+  /* services */
+  .services { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  /* footer */
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .actionImage {
+    display: none;
+  }
+  .action {
+    right: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .dashItems {
+    grid-template-columns: 1fr;
+  }
+  .dashEnquiry {
+    width: 440px;
+    height: 100px;
+    padding-left: 10px;
+  }
+  .dashEnquiry h3 {
+    font-size: 18px;
+  }
+  .dashEnquiry p {
+    font-size: 14px;     
+  }
+  .aboutOfferWork {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+  .dashContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .dashboard {
+    width: calc(100% - 35px);
+  }
+  .dashEnquiry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .dashItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .sideBar {
+    display: none;
+  }
+  .hamburgerSideBar {
+    padding-top: 20px;
+    padding-left: 5px;
+    display: block;
+    cursor: pointer;
+    border: none;
+    background-color: #E5E5E5;
+  }
+  .sideBar.appear .hamburgerSideBar {
+    padding-top: 20px;
+    padding-left: 10px;
+    display: block;
+    cursor: pointer;
+    border: none;
+    background-color: #FFFFFF;
+  }
+  .sideBar.appear {
+    display: block;
+    background-color: #FFFFFF;
+    left: 0;
+    width: 80vw;
+    z-index: 100;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .aboutOfferWork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .aboutTeamMembers {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+  }
+  .dashboard {
+    padding: 25px;
+  }
+  .dashIdentity {
+    display: none;
+  }
+  
+}
+@media only screen and (max-width: 610px) {
+  
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .aboutIdentity {
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard {
+    padding: 8px;
+  }
+  .missingItem {
+    margin: 30px 20px;
+  }
+  @media only screen and (max-width: 500px) {
+    .dashEnquiry {
+      width: 400px;
+      height: 100px;
+    }
+  }
+  
+}
+@media only screen and (max-width: 400px) {
+  .aboutTeamMembers {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutTeamMember {
+    margin-top: 30px;
+  }
+  .dashEnquiry {
+    width: 300px;
+    height: 120px;
+  }
+}

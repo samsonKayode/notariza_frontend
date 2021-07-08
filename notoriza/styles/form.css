@@ -1,0 +1,597 @@
+button {
+    cursor: pointer;
+}
+.search-form {
+    margin-bottom: 15px;
+}
+.search-bar {
+    width: 260px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding-left: 10px;
+    border: 0.5px hsla(0, 0%, 50%, 1) solid;
+}
+.search-button {
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsla(236, 51%, 38%, 1);
+    color: #fff;
+}
+.createUserbtn {
+    height: 55px;
+    width: 300px;
+    background-color: hsla(236, 51%, 38%, 1);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    font-family: Cera Pro;
+    font-size: 16px;
+    font-weight: 600;  
+}
+.createUserbtnbody {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 20px 0;
+}
+.tableButton {
+    font-size: 16px;
+    background-color: #fff;
+    border: 0.5px hsla(0, 0%, 50%, 1) solid;
+}
+.errormessage {
+    color: rgba(236, 138, 138, 0.856);
+    font-size: 20px;
+    text-align: center;
+    padding: 0 15px;
+}
+.btnAndError {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginPage {
+    padding: 55px 100px;
+}
+.loginSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loginTitle {
+    font-family: Cera Pro;
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: hsla(0, 0%, 50%, 1);
+}
+.googleBtn {
+    height: 55px;
+    width: 416px;
+    border-radius: 10px;
+    background: hsla(0, 0%, 88%, 1);
+    border: none;
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    align-items: center;
+    padding-left: 30px;
+    font-family: Cera Pro;
+    font-size: 16px;
+    font-weight: 600;
+    color: hsla(0, 0%, 20%, 1);
+}
+.alternate {
+    font-family: Cera Pro;
+    font-size: 16px;
+    font-weight: 600;
+    color: hsla(0, 0%, 88%, 1);
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+.loginInputLabel {
+    font-family: Cera Pro;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    align-self: flex-start;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+.loginInput {
+    border: 1px solid hsla(0, 0%, 80%, 1);
+    height: 55px;
+    width: 470px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.loginBtn {
+    height: 55px;
+    width: 470px;
+    background-color: hsla(236, 51%, 38%, 1);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    font-family: Cera Pro;
+    font-size: 16px;
+    font-weight: 600;
+}
+.loggedInSection {
+    width: 100%;
+    padding-bottom: 35px;
+    padding-top: 10px;
+    display: block;
+    display: grid;
+    grid-template-columns: 15px 1fr 1fr;
+}
+.loggedInLabel {
+    font-family: Cera Pro;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    align-self: flex-start;
+    padding-left: 8px;
+}
+.loginForgetPassword {
+    text-align: right;
+}
+.loginRegister {
+    padding-top: 20px;
+}
+.registerLink {
+    color:  hsla(236, 51%, 38%, 1);
+}
+.registerTitle{
+    font-family: Cera Pro;
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.back {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.backIcon {
+    height: 36px;
+    width: 36px;
+    background-color: hsla(0, 1%, 67%, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.registerGoogle {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.registerAlt {
+    text-align: center;
+}
+.registerForm {
+    padding: 0 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.inputUnit {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+.registerInput {
+    border: 1px solid hsla(0, 0%, 80%, 1);
+    height: 55px;
+    width: 400px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.inputUnitLong {
+    width: 850px;
+    Height: 55px;
+    border: 1px solid hsla(0, 0%, 80%, 1);
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.signUpBtn {
+    display: block;
+    height: 55px;
+    width: 278px;
+    border-radius: 10px;
+    background: hsla(236, 51%, 38%, 1);
+    color: #fff;
+    align-self: flex-end;
+    margin:0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+.termsPolicy {
+    font-family: Cera Pro;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    max-width: 340px;
+    color: hsla(0, 0%, 88%, 1);
+}
+.giftDeedImage {
+    display: flex;
+    justify-content: center;
+}
+/* Missing Item */
+.missingSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.missingSection h3 {
+    font-family: Cera Pro;
+    font-size: 29px;
+    font-weight: 500;
+    color: hsla(0, 1%, 67%, 1);
+}
+.missingItem {
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 30px 40px;
+    padding: 30px 40px;
+}
+.missingItemHeader h2 {
+    font-family: Cera Pro;
+    font-size: 32px;
+    font-weight: 700;
+    color: hsla(0, 1%, 67%, 1);
+
+}
+
+.fullAddInput {
+    height: 135px;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid hsla(0, 0%, 80%, 1);
+    padding-left: 10px;
+}
+.miniMissing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.miniMissingInput {
+    height: 50px;
+    width: 172px;
+    border-radius: 10px;
+    border: 1px solid hsla(0, 0%, 80%, 1);
+    padding-left: 10px;
+}
+.missingDesc {
+    height: 165px;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid hsla(0, 0%, 80%, 1);
+    padding-left: 10px;
+}
+.missingDescSpan {
+    margin-bottom: 20px;
+    color: hsla(215, 13%, 70%, 1);
+
+}
+.moreInfoWords h3 {
+    font-family: Cera Pro;
+    font-size: 29px;
+    font-weight: 500;
+    color: #000;
+}
+.moreInfo {
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 200px;
+    /* right: 200px;
+    top : -100px; */
+}
+.moreInfoWords {
+    background-image: url(../public/vector.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 360px;
+}
+.moreInfoWords h3{
+    font-family: Cera Pro;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 41px;
+}
+.moreInfoWords p{
+    font-family: Cera Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    color: hsla(0, 0%, 50%, 1);
+}
+.formLabel {
+    font-family: Cera Pro;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: left;
+}
+.infoVerify {
+    margin-top: 20px;
+}
+.reset {
+    height: 55px;
+    width: 180px;
+    border: 2px solid hsla(236, 51%, 38%, 1);
+    border-radius: 10px;
+    color: hsla(236, 51%, 38%, 1);
+    background-color: #fff;
+    margin-top: 40px;
+}
+.submit {
+    height: 55px;
+    width: 180px;
+    border-radius: 10px;
+    background: hsla(236, 51%, 38%, 1);
+    color: #fff;
+    border: none;
+    margin-top: 40px;
+}
+button {
+    font-family: Cera Pro;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+}
+#uploadDocument::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .uploadDocument{
+    position: relative;
+    width: 400px;
+    height: 164px;
+    padding-top: 20px;
+    z-index: 3;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: inherit;
+    /* content: 'Drop files here \A OR Browse files from computer \A PDF Only'; */
+  }
+  #uploadDocument::before {
+    width: 400px;
+    height: 164px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px dashed #E5E5E5;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: 0;
+    content: 'Drop files here \A or Browse files from computer \A PDF Only';
+    white-space: pre-wrap;
+    font-family: inherit;
+    line-height: 20px;
+  }
+  .forgotPassword {
+      display: flex;
+      padding: 1.5rem 4rem;
+  }
+  .forgotPasswordForm {
+      display: flex;
+      flex-direction: column;
+  }
+  .forgotPasswordWords {
+      padding: 0 1.5rem;
+  }
+  .forgotPasswordWords h1 {
+    font-family: Cera Pro;
+    font-size: 67px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .forgotPasswordWords p {
+    font-family: Cera Pro;
+    font-size: 21px;
+    font-weight: 500;
+    color: hsla(0, 1%, 67%, 1);
+    max-width: 433px;
+  }
+  .forgotPasswordInput {
+    height: 55px;
+    width: 478px;
+    border-radius: 10px;
+    border: 1px solid hsla(0, 0%, 80%, 1);
+    padding-left: 15px; 
+  }
+  .forgotPasswordSubmit {
+    height: 55px;
+    width: 278px;
+    border-radius: 10px;
+    background: hsla(236, 51%, 38%, 1);
+    color: #fff;
+    border: none;
+    margin-top: 50px;
+    align-self: flex-start;
+  }
+  .forgotPasswordImage {
+      margin-top: 2rem;
+  }
+
+@media only screen and (max-width: 1000px) {
+    .forgotPasswordImage {
+        display: none;
+    }
+    .forgotPasswordWords {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .forgotPasswordWords h1 {
+        text-align: center;
+    }
+    .fullAddInput {
+        height: 100px;
+        width: 300px;
+    }
+    .miniMissingInput {
+        height: 50px;
+        width: 132px;
+    }
+    .missingDesc {
+        height: 135px;
+        width: 300px;
+    }
+
+}
+@media only screen and (max-width: 1105px) {
+    .registerInput {
+        height: 50px;
+        width: 320px;
+    }
+    .registerForm {
+        padding: 0 10px;
+    }
+    .inputUnit {
+        margin: 0 10px;
+    }
+    .inputUnitLong {
+        width: 620px;
+        Height: 50px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .inputUnitLong {
+        width: 300px;
+        Height: 50px;
+    }
+    .registerInput {
+        height: 50px;
+        width: 300px;
+    }
+    .fullAddInput {
+        height: 100px;
+        width: 300px;
+    }
+    .reset {
+        height: 50px;
+        width: 130px;
+    }
+    .submit {
+        height: 50px;
+        width: 130px;
+    }
+    .miniMissingInput {
+        height: 50px;
+        width: 162px;
+    }
+    .missingDesc {
+        height: 135px;
+        width: 300px;
+    }
+    .forgotPassword {
+        padding: 1rem 1rem;
+    }
+    .forgotPasswordWords {
+        padding: 0;
+    }
+    .forgotPasswordInput {
+        height: 50px;
+        width: 450px;
+    }
+    .forgotPasswordSubmit {
+        height: 55px;
+        width: 200px;
+        align-self: center;
+      }
+
+}
+@media only screen and (max-width: 510px) {
+    .loginTitle {
+        font-size: 34px;
+    }
+    .googleBtn {
+        height: 55px;
+        width: 400px;
+    }
+    .loginInput {
+        height: 50px;
+        width: 300px;
+    }
+    .loginPage {
+        padding: 55px 15px;
+    }
+    .loginInputLabel {
+        align-self: center;
+    }
+    .loginBtn {
+        height: 50px;
+        width: 300px;
+    }
+    .forgotPasswordInput {
+        height: 50px;
+        width: 300px;
+    }
+    .missingItem {
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 10px 5px;
+    padding: 10px 10px;
+    }
+    
+}
+@media only screen and (max-width: 430px) {
+    .miniMissingInput {
+        height: 45px;
+        width: 142px;
+        border-radius: 10px;
+        border: 1px solid hsla(0, 0%, 80%, 1);
+        padding-left: 10px;
+    }
+    @media only screen and (max-width: 390px) {
+        .missingSection .registerInput {
+            height: 50px;
+            width: 260px;
+        }
+        .fullAddInput {
+            width: 260px;
+        }
+        .missingDesc {
+            width: 260px;
+        }
+        .missingSection .loginInputLabel {
+            font-size: 14px;
+        }
+        .inputUnit {
+            margin: 0 5px;
+        }
+        .miniMissingInput {
+            height: 45px;
+            width: 130px;
+        }
+    }
+}
