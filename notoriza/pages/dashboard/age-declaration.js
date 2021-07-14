@@ -50,7 +50,7 @@ function AgeDeclaration() {
         } catch (error) {
             setError(true)
             setIsLoading(false)
-            setErrorMessage("Ensure all sections are filled")
+            setErrorMessage("Ensure all asterik sections are filled")
         }
              
     }
